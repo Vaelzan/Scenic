@@ -8,6 +8,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.SeaPickleBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorld;
+import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.gen.feature.Feature;
@@ -32,6 +33,11 @@ public class RockPileFeature extends Feature<CountConfig> {
 
     @Override
     public boolean place(@Nonnull IWorld world, @Nonnull ChunkGenerator<?> generator, @Nonnull Random random, @Nonnull BlockPos chunkCorner, CountConfig countConfig) {
+
+        if (!(world.getDimension().getType() == DimensionType.OVERWORLD)) {
+            return false;
+        }
+
         int placed = 0;
 
         for(int i = 0; i < countConfig.count; ++i) {
