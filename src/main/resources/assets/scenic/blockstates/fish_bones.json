@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "scenic:block/fish_bones", "x": 90 },
+      { "model": "scenic:block/fish_bones", "x": 90, "y": 90 },
+      { "model": "scenic:block/fish_bones", "x": 90, "y": 180 },
+      { "model": "scenic:block/fish_bones", "x": 90, "y": 270 }
+    ]
+  }
+}

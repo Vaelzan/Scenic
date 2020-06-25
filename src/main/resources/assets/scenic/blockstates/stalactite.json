@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "scenic:block/stalactite_one" },
+      { "model": "scenic:block/stalactite_one", "y": 90 },
+      { "model": "scenic:block/stalactite_one", "y": 180 },
+      { "model": "scenic:block/stalactite_one", "y": 270 }
+    ]
+  }
+}

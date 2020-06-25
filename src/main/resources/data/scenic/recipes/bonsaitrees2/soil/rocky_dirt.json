@@ -1,0 +1,22 @@
+{
+  "type": "bonsaitrees2:soil",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bonsaitrees2"
+    }
+  ],
+  "mod": "scenic",
+
+  "soil": {
+    "item": "scenic:rocky_dirt"
+  },
+
+  "display": {
+    "block": "scenic:rocky_dirt"
+  },
+
+  "tickModifier": 1.2,
+
+  "compatibleSoilTags": ["dirt"]
+}

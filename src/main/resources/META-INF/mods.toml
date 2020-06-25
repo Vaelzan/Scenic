@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+[[mods]]
+modId="scenic"
+version="${file.jarVersion}"
+displayName="Scenic"
+#updateJSONURL="http://myurl.me/"
+displayURL="http://evilcult.net/scenicmod/"
+logoFile="scenic.png"
+authors="Vaelzan, Brunin"
+description='''
+Scenic Mod
+
+This mod adds a collection of new blocks and world generation targeted at terraformers and landscapers. We hope you
+enjoy it!
+
+'''
+
+[[dependencies.scenic]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31.2.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.scenic]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"

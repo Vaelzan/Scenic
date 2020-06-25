@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=lower": { "model": "scenic:block/roots_long_bottom" },
+    "half=upper":    { "model": "scenic:block/roots_long_top" }
+  }
+}

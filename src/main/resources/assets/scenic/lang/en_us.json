@@ -1,0 +1,21 @@
+{
+  "itemGroup.scenic_main": "Scenic",
+
+  "block.scenic.grass_tuft": "Grass Tuft",
+  "block.scenic.grass_short": "Short Grass",
+  "block.scenic.roots": "Roots",
+  "block.scenic.roots_long": "Long Roots",
+  "block.scenic.roots_ground": "Ground Roots",
+  "block.scenic.rocky_dirt": "Rocky Dirt",
+  "block.scenic.mossy_gravel": "Mossy Gravel",
+  "block.scenic.mossy_rocky_dirt": "Mossy Rocky Dirt",
+  "block.scenic.cracked_bricks": "Cracked Bricks",
+  "block.scenic.mossy_bricks": "Mossy Bricks",
+  "block.scenic.treasure_pot": "Treasure Pot",
+  "block.scenic.rock_pile": "Rock Pile",
+  "block.scenic.stalagmite": "Stalagmite",
+  "block.scenic.stalactite": "Stalactite",
+  "block.scenic.fish_bones": "Fish Bones",
+
+  "item.scenic.rock": "Rock"
+}
