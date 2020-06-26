@@ -6,10 +6,12 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.IWaterLoggable;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.fluid.IFluidState;
+import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.pathfinding.PathType;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.tags.FluidTags;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -20,13 +22,15 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.IWorldReader;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import java.util.Objects;
 
 /**
  * Stalagmite Block
  * Scenic-Mod - net.evilcult.scenic.block.StalagmiteBlock
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-0.1.2
+ * @version 1.15.2-0.1.3
  * @since 2020-06-24
  */
 public class StalagmiteBlock extends Block implements IWaterLoggable {
@@ -74,6 +78,14 @@ public class StalagmiteBlock extends Block implements IWaterLoggable {
     public boolean isValidPosition(BlockState state, IWorldReader world, BlockPos position) {
         BlockPos blockPos = position.down();
         return this.isValidGround(world.getBlockState(blockPos), world, blockPos);
+    }
+
+    @Nullable
+    @Override
+    public BlockState getStateForPlacement(BlockItemUseContext context) {
+        IFluidState fluidState = context.getWorld().getFluidState(context.getPos());
+        boolean isWaterLogged = fluidState.isTagged(FluidTags.WATER) && fluidState.getLevel() == 8;
+        return Objects.requireNonNull(super.getStateForPlacement(context)).with(WATERLOGGED, isWaterLogged);
     }
 
     @SuppressWarnings("deprecation")
