@@ -71,7 +71,7 @@ public class ScenicBiomeFeatures {
     public static final BlockClusterFeatureConfig STALAGMITE_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(STALAGMITE), new SimpleBlockPlacer())).tries(32).xSpread(20).zSpread(20).whitelist(ImmutableSet.of(STONE.getBlock())).func_227317_b_().build();
     public static final BlockClusterFeatureConfig STALACTITE_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(STALACTITE), new SimpleBlockPlacer())).tries(32).xSpread(20).zSpread(20).func_227317_b_().build();  //.whitelist(ImmutableSet.of(STONE.getBlock())) // (doesn't work with this placer, the whitelist checks below not above)
 
-    public static final BlockClusterFeatureConfig TREASURE_POT_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(TREASURE_POT), new SimpleBlockPlacer())).tries(128).whitelist(ImmutableSet.of(COBBLESTONE.getBlock(), MOSSY_COBBLESTONE.getBlock())).func_227317_b_().build();
+    public static final BlockClusterFeatureConfig TREASURE_POT_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(TREASURE_POT), new SimpleBlockPlacer())).tries(256).whitelist(ImmutableSet.of(COBBLESTONE.getBlock(), MOSSY_COBBLESTONE.getBlock())).func_227317_b_().build();
 
     //public static final BlockClusterFeatureConfig MOSSY_GRAVEL_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(GRASS_TUFT), new SimpleBlockPlacer())).tries(32).build();
 
@@ -94,7 +94,7 @@ public class ScenicBiomeFeatures {
             biome.addFeature(GenerationStage.Decoration.UNDERGROUND_DECORATION, Feature.RANDOM_PATCH.withConfiguration(STALACTITE_CONFIG).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 60))));
 
             // Treasure!
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_DECORATION, Feature.RANDOM_PATCH.withConfiguration(TREASURE_POT_CONFIG).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(20, 0, 0, 60))));
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_DECORATION, Feature.RANDOM_PATCH.withConfiguration(TREASURE_POT_CONFIG).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 60))));
 
             if (biome.getCategory() == Biome.Category.RIVER || biome.getCategory() == Biome.Category.SWAMP) {
                 // Add Mossy Gravel and Mossy Rocky Dirt to rivers and swamps.
