@@ -1,0 +1,7 @@
+{
+  "parent": "scenic:block/stained_glass_lantern",
+  "textures": {
+    "particle": "scenic:block/light_blue_stained_glass_lantern",
+    "all": "scenic:block/light_blue_stained_glass_lantern"
+  }
+}

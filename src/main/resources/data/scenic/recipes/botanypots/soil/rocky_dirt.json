@@ -1,11 +1,13 @@
 {
-  "type": "botanypots:soil",
   "conditions": [
     {
       "type": "forge:mod_loaded",
       "modid": "botanypots"
     }
   ],
+
+  "type": "botanypots:soil",
+
   "input": {
     "item": "scenic:rocky_dirt"
   },

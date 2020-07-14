@@ -17,5 +17,22 @@
   "block.scenic.stalactite": "Stalactite",
   "block.scenic.fish_bones": "Fish Bones",
 
+  "block.scenic.white_stained_glass_lantern": "White Stained Glass Lantern",
+  "block.scenic.orange_stained_glass_lantern": "Orange Stained Glass Lantern",
+  "block.scenic.magenta_stained_glass_lantern": "Magenta Stained Glass Lantern",
+  "block.scenic.light_blue_stained_glass_lantern": "Light Blue Stained Glass Lantern",
+  "block.scenic.yellow_stained_glass_lantern": "Yellow Stained Glass Lantern",
+  "block.scenic.lime_stained_glass_lantern": "Lime Stained Glass Lantern",
+  "block.scenic.pink_stained_glass_lantern": "Pink Stained Glass Lantern",
+  "block.scenic.gray_stained_glass_lantern": "Gray Stained Glass Lantern",
+  "block.scenic.light_gray_stained_glass_lantern": "Light Gray Stained Glass Lantern",
+  "block.scenic.cyan_stained_glass_lantern": "Cyan Stained Glass Lantern",
+  "block.scenic.purple_stained_glass_lantern": "Purple Stained Glass Lantern",
+  "block.scenic.blue_stained_glass_lantern": "Blue Stained Glass Lantern",
+  "block.scenic.brown_stained_glass_lantern": "Brown Stained Glass Lantern",
+  "block.scenic.green_stained_glass_lantern": "Green Stained Glass Lantern",
+  "block.scenic.red_stained_glass_lantern": "Red Stained Glass Lantern",
+  "block.scenic.black_stained_glass_lantern": "Black Stained Glass Lantern",
+
   "item.scenic.rock": "Rock"
 }

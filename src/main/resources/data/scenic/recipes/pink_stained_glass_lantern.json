@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "scenic:lanterns"
+    },
+    {
+      "tag": "forge:glass_panes/pink"
+    },
+    {
+      "tag": "forge:glass_panes/pink"
+    }
+  ],
+  "result": {
+    "item": "scenic:pink_stained_glass_lantern",
+    "count": 1
+  }
+}
