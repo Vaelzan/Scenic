@@ -16,7 +16,7 @@ apply plugin: 'maven-publish'
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 
-version = '1.15.2-1.0.1'
+version = '1.15.2-1.0.2'
 group = 'net.evilcult.scenic' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'scenic'
 

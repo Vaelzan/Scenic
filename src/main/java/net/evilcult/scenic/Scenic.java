@@ -24,7 +24,7 @@ import org.apache.logging.log4j.Logger;
  * Scenic-Mod - net.evilcult.scenic.Scenic
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-0.1.2
+ * @version 1.15.2-1.0.2
  * @since 2020-04-25
  */
 @Mod(Scenic.MODID)
@@ -59,9 +59,7 @@ public class Scenic {
 
         MOD_EVENT_BUS.addListener(this::commonSetup);
 
-        // Should be safe enough to ignore this for now.
-        //noinspection deprecation
-        DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> {
+        DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> () -> {
             MOD_EVENT_BUS.addListener(EventPriority.LOWEST, this::clientSetup);
         });
 
@@ -76,8 +74,11 @@ public class Scenic {
      */
     @SuppressWarnings("deprecation") // DeferredWorkQueue is deprecated for some stupid reason.
     private void commonSetup(final FMLCommonSetupEvent event) {
-        // Add Features
-        DeferredWorkQueue.runLater(ScenicBiomeFeatures::addBiomeFeatures);
+        DeferredWorkQueue.runLater(() -> {
+            ScenicBiomeFeatures.addBiomeFeatures();
+            ScenicBlocks.registerFlammables();
+            ScenicItems.registerCompostables();
+        });
     }
 
     /**
@@ -85,7 +86,6 @@ public class Scenic {
      * @param event FML Client Setup Event
      */
     @SuppressWarnings("deprecation") // DeferredWorkQueue is deprecated for some stupid reason.
-    @OnlyIn(Dist.CLIENT)
     private void clientSetup(final FMLClientSetupEvent event) {
         DeferredWorkQueue.runLater(() -> {
             ScenicColours.registerColours();

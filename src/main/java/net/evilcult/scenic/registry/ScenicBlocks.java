@@ -2,6 +2,7 @@ package net.evilcult.scenic.registry;
 
 import net.evilcult.scenic.Scenic;
 import net.evilcult.scenic.block.*;
+import net.evilcult.scenic.utils.VanillaUtils;
 import net.minecraft.block.Block;
 import net.minecraft.block.GravelBlock;
 import net.minecraft.block.LanternBlock;
@@ -18,7 +19,7 @@ import net.minecraftforge.registries.ForgeRegistries;
  * Scenic-Mod - net.evilcult.scenic.registry.AestheticsBlocks
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-0.1.2
+ * @version 1.15.2-1.0.2
  * @since 2020-04-25
  */
 @SuppressWarnings({"WeakerAccess", "unused"})
@@ -241,4 +242,11 @@ public class ScenicBlocks {
                     .lightValue(15)
                     .notSolid()));
 
+    public static void registerFlammables() {
+        VanillaUtils.registerFlammable(GRASS_TUFT.get(), 5, 60);
+        VanillaUtils.registerFlammable(GRASS_SHORT.get(), 5, 60);
+        VanillaUtils.registerFlammable(ROOTS.get(), 5, 60);
+        VanillaUtils.registerFlammable(ROOTS_GROUND.get(), 5, 60);
+        VanillaUtils.registerFlammable(ROOTS_LONG.get(), 5, 60);
+    }
 }

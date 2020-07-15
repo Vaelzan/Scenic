@@ -9,15 +9,14 @@ import net.minecraft.item.ItemStack;
  * Scenic-Mod - net.evilcult.scenic.AestheticsItemGroup
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-0.1.2
+ * @version 1.15.2-1.0.2
  * @since 2020-04-25
  */
 public class ScenicItemGroups {
-
     public static final ItemGroup MAIN = new ItemGroup(Scenic.MODID + "_main") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ScenicItems.ROCKY_DIRT.get());
+            return new ItemStack(ScenicItems.TREASURE_POT.get());
         }
     };
 }

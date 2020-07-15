@@ -2,6 +2,7 @@ package net.evilcult.scenic.registry;
 
 import net.evilcult.scenic.Scenic;
 import net.evilcult.scenic.ScenicItemGroups;
+import net.evilcult.scenic.utils.VanillaUtils;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.BlockNamedItem;
 import net.minecraft.item.Item;
@@ -14,7 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
  * Scenic-Mod - net.evilcult.scenic.registry.AestheticsItems
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-0.1.2
+ * @version 1.15.2-1.0.2
  * @since 2020-04-25
  */
 @SuppressWarnings({"WeakerAccess", "unused"})
@@ -117,5 +118,13 @@ public class ScenicItems {
 
     public static Item.Properties defaultProperties() {
         return new Item.Properties().group(ScenicItemGroups.MAIN);
+    }
+
+    public static void registerCompostables() {
+        VanillaUtils.registerCompostable(GRASS_TUFT.get(), 0.3f);
+        VanillaUtils.registerCompostable(GRASS_SHORT.get(), 0.2f);
+        VanillaUtils.registerCompostable(ROOTS.get(), 0.3f);
+        VanillaUtils.registerCompostable(ROOTS_LONG.get(), 0.5f);
+        VanillaUtils.registerCompostable(ROOTS_GROUND.get(), 0.3f);
     }
 }
