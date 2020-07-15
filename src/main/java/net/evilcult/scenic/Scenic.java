@@ -59,7 +59,8 @@ public class Scenic {
 
         MOD_EVENT_BUS.addListener(this::commonSetup);
 
-        DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> () -> {
+        //noinspection deprecation
+        DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> {
             MOD_EVENT_BUS.addListener(EventPriority.LOWEST, this::clientSetup);
         });
 
