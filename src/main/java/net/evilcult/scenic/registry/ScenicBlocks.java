@@ -2,8 +2,10 @@ package net.evilcult.scenic.registry;
 
 import net.evilcult.scenic.Scenic;
 import net.evilcult.scenic.block.*;
+import net.evilcult.scenic.utils.VanillaUtils;
 import net.minecraft.block.Block;
 import net.minecraft.block.GravelBlock;
+import net.minecraft.block.LanternBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -17,7 +19,7 @@ import net.minecraftforge.registries.ForgeRegistries;
  * Scenic-Mod - net.evilcult.scenic.registry.AestheticsBlocks
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-0.1.2
+ * @version 1.15.2-1.0.2
  * @since 2020-04-25
  */
 @SuppressWarnings({"WeakerAccess", "unused"})
@@ -128,4 +130,123 @@ public class ScenicBlocks {
                     .doesNotBlockMovement()
                     .harvestLevel(0)));
 
+    public static final RegistryObject<Block> WHITE_STAINED_GLASS_LANTERN = BLOCKS.register("white_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_GLASS_LANTERN = BLOCKS.register("orange_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_GLASS_LANTERN = BLOCKS.register("magenta_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_GLASS_LANTERN = BLOCKS.register("light_blue_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_GLASS_LANTERN = BLOCKS.register("yellow_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> LIME_STAINED_GLASS_LANTERN = BLOCKS.register("lime_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> PINK_STAINED_GLASS_LANTERN = BLOCKS.register("pink_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> GRAY_STAINED_GLASS_LANTERN = BLOCKS.register("gray_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_GLASS_LANTERN = BLOCKS.register("light_gray_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> CYAN_STAINED_GLASS_LANTERN = BLOCKS.register("cyan_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_GLASS_LANTERN = BLOCKS.register("purple_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> BLUE_STAINED_GLASS_LANTERN = BLOCKS.register("blue_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> BROWN_STAINED_GLASS_LANTERN = BLOCKS.register("brown_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> GREEN_STAINED_GLASS_LANTERN = BLOCKS.register("green_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> RED_STAINED_GLASS_LANTERN = BLOCKS.register("red_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> BLACK_STAINED_GLASS_LANTERN = BLOCKS.register("black_stained_glass_lantern",
+            () -> new LanternBlock(Block.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightValue(15)
+                    .notSolid()));
+
+    public static void registerFlammables() {
+        VanillaUtils.registerFlammable(GRASS_TUFT.get(), 5, 60);
+        VanillaUtils.registerFlammable(GRASS_SHORT.get(), 5, 60);
+        VanillaUtils.registerFlammable(ROOTS.get(), 5, 60);
+        VanillaUtils.registerFlammable(ROOTS_GROUND.get(), 5, 60);
+        VanillaUtils.registerFlammable(ROOTS_LONG.get(), 5, 60);
+    }
 }

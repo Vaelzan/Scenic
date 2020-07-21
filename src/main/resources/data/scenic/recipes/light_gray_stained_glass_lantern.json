@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "scenic:lanterns"
+    },
+    {
+      "tag": "forge:glass_panes/light_gray"
+    },
+    {
+      "tag": "forge:glass_panes/light_gray"
+    }
+  ],
+  "result": {
+    "item": "scenic:light_gray_stained_glass_lantern",
+    "count": 1
+  }
+}

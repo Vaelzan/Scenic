@@ -1,11 +1,12 @@
 {
-  "type": "bonsaitrees2:soil",
   "conditions": [
     {
       "type": "forge:mod_loaded",
       "modid": "bonsaitrees2"
     }
   ],
+
+  "type": "bonsaitrees2:soil",
   "mod": "scenic",
 
   "soil": {

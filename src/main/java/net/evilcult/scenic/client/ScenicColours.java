@@ -18,7 +18,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
  * Handles setting the correct colours for grass and foliage in our blocks.
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-0.1.2
+ * @version 1.15.2-1.0.1
  * @since 2020-06-14
  */
 @OnlyIn(Dist.CLIENT)

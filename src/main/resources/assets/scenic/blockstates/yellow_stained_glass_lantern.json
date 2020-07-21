@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "hanging=true": { "model": "scenic:block/yellow_stained_glass_hanging_lantern"},
+    "hanging=false": { "model": "scenic:block/yellow_stained_glass_lantern"}
+  }
+}

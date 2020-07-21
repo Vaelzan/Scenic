@@ -13,7 +13,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
  * Used to set the correct render types for our blocks.
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-0.1.2
+ * @version 1.15.2-1.0.1
  * @since 2020-06-14
  */
 @OnlyIn(Dist.CLIENT)
@@ -28,5 +28,21 @@ public class ScenicRenderTypes {
         RenderTypeLookup.setRenderLayer(ScenicBlocks.ROOTS_GROUND.get(), cutout);
         RenderTypeLookup.setRenderLayer(ScenicBlocks.FISH_BONES.get(), cutout);
 
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.BLACK_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.BLUE_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.BROWN_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.CYAN_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.GRAY_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.GREEN_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.LIGHT_BLUE_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.LIGHT_GRAY_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.LIME_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.MAGENTA_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.ORANGE_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.PINK_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.PURPLE_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.RED_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.WHITE_STAINED_GLASS_LANTERN.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ScenicBlocks.YELLOW_STAINED_GLASS_LANTERN.get(), cutout);
     }
 }
