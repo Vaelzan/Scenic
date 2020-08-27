@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "scenic:sandstone_rock"
+    }
+  },
+  "result": {
+    "item": "minecraft:sandstone"
+  }
+}

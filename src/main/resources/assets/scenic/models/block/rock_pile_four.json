@@ -1,57 +1,7 @@
 {
-	"parent": "block/block",
+	"parent": "scenic:block/base_rock_pile_four",
 	"textures": {
-		"0": "scenic:block/rocks",
+		"all": "scenic:block/rocks",
 		"particle": "scenic:block/rocks"
-	},
-	"elements": [
-		{
-			"from": [5, 0, 4],
-			"to": [7, 1, 6],
-			"faces": {
-				"north": {"uv": [0, 0, 2, 1], "texture": "#0"},
-				"east": {"uv": [0, 0, 2, 1], "texture": "#0"},
-				"south": {"uv": [9, 0, 11, 1], "texture": "#0"},
-				"west": {"uv": [8, 1, 10, 2], "texture": "#0"},
-				"up": {"uv": [8, 0, 10, 2], "texture": "#0"},
-				"down": {"uv": [0, 0, 2, 2], "texture": "#0"}
-			}
-		},
-		{
-			"from": [7, 0, 8],
-			"to": [9, 1, 11],
-			"faces": {
-				"north": {"uv": [0, 0, 2, 1], "texture": "#0"},
-				"east": {"uv": [0, 0, 3, 1], "texture": "#0"},
-				"south": {"uv": [0, 0, 2, 1], "texture": "#0"},
-				"west": {"uv": [0, 0, 3, 1], "texture": "#0"},
-				"up": {"uv": [0, 0, 2, 3], "texture": "#0"},
-				"down": {"uv": [0, 0, 2, 3], "texture": "#0"}
-			}
-		},
-		{
-			"from": [8, 0, 5],
-			"to": [11, 2, 8],
-			"faces": {
-				"north": {"uv": [0, 0, 3, 2], "texture": "#0"},
-				"east": {"uv": [0, 0, 3, 2], "texture": "#0"},
-				"south": {"uv": [0, 0, 3, 2], "texture": "#0"},
-				"west": {"uv": [0, 0, 3, 2], "texture": "#0"},
-				"up": {"uv": [0, 0, 3, 3], "texture": "#0"},
-				"down": {"uv": [0, 0, 3, 3], "texture": "#0"}
-			}
-		},
-		{
-			"from": [10, 0, 9],
-			"to": [12, 2, 11],
-			"faces": {
-				"north": {"uv": [9, 1, 11, 3], "texture": "#0"},
-				"east": {"uv": [8, 0, 10, 2], "texture": "#0"},
-				"south": {"uv": [10, 0, 12, 2], "texture": "#0"},
-				"west": {"uv": [9, 1, 11, 3], "texture": "#0"},
-				"up": {"uv": [9, 1, 11, 3], "texture": "#0"},
-				"down": {"uv": [9, 3, 11, 5], "texture": "#0"}
-			}
-		}
-	]
+	}
 }

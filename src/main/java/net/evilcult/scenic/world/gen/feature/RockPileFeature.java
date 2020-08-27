@@ -3,6 +3,7 @@ package net.evilcult.scenic.world.gen.feature;
 import com.mojang.datafixers.Dynamic;
 import net.evilcult.scenic.block.RockPileBlock;
 import net.evilcult.scenic.registry.ScenicBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SeaPickleBlock;
@@ -23,29 +24,30 @@ import java.util.function.Function;
  * Scenic-Mod - net.evilcult.scenic.world.gen.feature.RockPileFeature
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-0.1.2
+ * @version 1.15.2-1.0.3
  * @since 2020-06-24
  */
-public class RockPileFeature extends Feature<CountConfig> {
-    public RockPileFeature(Function<Dynamic<?>, ? extends CountConfig> config) {
+public class RockPileFeature extends Feature<RockPileConfig> {
+
+    public RockPileFeature(Function<Dynamic<?>, ? extends RockPileConfig> config) {
         super(config);
     }
 
     @Override
-    public boolean place(@Nonnull IWorld world, @Nonnull ChunkGenerator<?> generator, @Nonnull Random random, @Nonnull BlockPos chunkCorner, CountConfig countConfig) {
-
-        if (!(world.getDimension().getType() == DimensionType.OVERWORLD)) {
+    public boolean place(@Nonnull IWorld world, @Nonnull ChunkGenerator<?> generator, @Nonnull Random random, @Nonnull BlockPos chunkCorner, @Nonnull RockPileConfig config) {
+        if (!(world.getDimension().getType() == config.dimensionType)) {
             return false;
         }
 
         int placed = 0;
 
-        for(int i = 0; i < countConfig.count; ++i) {
-            int xRand = random.nextInt(8) - random.nextInt(8);
-            int zRand = random.nextInt(8) - random.nextInt(8);
-            int y = random.nextInt(64); // Just pick a random height for now, should be configurable later.
+        for(int i = 0; i < config.count; ++i) {
+            int xRand = random.nextInt(config.radius) - random.nextInt(config.radius);
+            int zRand = random.nextInt(config.radius) - random.nextInt(config.radius);
+
+            int y = config.minHeight + random.nextInt(config.maxHeight - config.minHeight);
             BlockPos position = new BlockPos(chunkCorner.getX() + xRand, y, chunkCorner.getZ() + zRand);
-            BlockState state = ScenicBlocks.ROCK_PILE.get().getDefaultState().with(RockPileBlock.ROCKS, random.nextInt(7) + 1);
+            BlockState state = config.state.with(RockPileBlock.ROCKS, random.nextInt(7) + 1);
             if (world.isAirBlock(position) && state.isValidPosition(world, position)) {
                 world.setBlockState(position, state, 2);
                 placed++;

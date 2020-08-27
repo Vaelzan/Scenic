@@ -1,0 +1,7 @@
+{
+	"parent": "scenic:block/base_rock_pile_seven",
+	"textures": {
+		"all": "scenic:block/sandstone_rocks",
+		"particle": "scenic:block/sandstone_rocks"
+	}
+}

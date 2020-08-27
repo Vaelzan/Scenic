@@ -19,7 +19,7 @@ import net.minecraftforge.registries.ForgeRegistries;
  * Scenic-Mod - net.evilcult.scenic.registry.AestheticsBlocks
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-1.0.2
+ * @version 1.15.2-1.0.3
  * @since 2020-04-25
  */
 @SuppressWarnings({"WeakerAccess", "unused"})
@@ -93,20 +93,24 @@ public class ScenicBlocks {
 
     public static final RegistryObject<Block> TREASURE_POT = BLOCKS.register("treasure_pot",
             () -> new TreasurePotBlock(Block.Properties.create(Material.CLAY, MaterialColor.ORANGE_TERRACOTTA)
-                    .hardnessAndResistance(1.0F, 3.0F)
+                    .hardnessAndResistance(0.2F, 3.0F)
                     .notSolid()
                     .sound(SoundType.STONE)
-                    .harvestTool(ToolType.PICKAXE)
                     .harvestLevel(0)));
 
     public static final RegistryObject<Block> ROCK_PILE = BLOCKS.register("rock_pile",
             () -> new RockPileBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE)
-                    .hardnessAndResistance(2.0F, 6.0F)
+                    .hardnessAndResistance(0.2F, 6.0F)
                     .doesNotBlockMovement()
                     .sound(SoundType.STONE)
-                    .harvestTool(ToolType.PICKAXE)
-                    .harvestLevel(1)));
+                    .harvestLevel(0)));
 
+    public static final RegistryObject<Block> SANDSTONE_ROCK_PILE = BLOCKS.register("sandstone_rock_pile",
+            () -> new RockPileBlock(Block.Properties.create(Material.ROCK, MaterialColor.SAND)
+                    .hardnessAndResistance(0.2F, 6.0F)
+                    .doesNotBlockMovement()
+                    .sound(SoundType.STONE)
+                    .harvestLevel(0)));
 
     public static final RegistryObject<Block> STALAGMITE = BLOCKS.register("stalagmite",
             () -> new StalagmiteBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE)

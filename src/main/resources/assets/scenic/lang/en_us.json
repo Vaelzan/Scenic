@@ -13,6 +13,7 @@
   "block.scenic.mossy_bricks": "Mossy Bricks",
   "block.scenic.treasure_pot": "Treasure Pot",
   "block.scenic.rock_pile": "Rock Pile",
+  "block.scenic.sandstone_rock_pile": "Sandstone Rock Pile",
   "block.scenic.stalagmite": "Stalagmite",
   "block.scenic.stalactite": "Stalactite",
   "block.scenic.fish_bones": "Fish Bones",
@@ -34,5 +35,6 @@
   "block.scenic.red_stained_glass_lantern": "Red Stained Glass Lantern",
   "block.scenic.black_stained_glass_lantern": "Black Stained Glass Lantern",
 
-  "item.scenic.rock": "Rock"
+  "item.scenic.rock": "Rock",
+  "item.scenic.sandstone_rock": "Sandstone Rock"
 }

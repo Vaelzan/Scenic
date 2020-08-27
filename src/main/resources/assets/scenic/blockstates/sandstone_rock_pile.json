@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "rocks=1": [
+      { "model": "scenic:block/sandstone_rock_pile_one" },
+      { "model": "scenic:block/sandstone_rock_pile_one", "y": 90 },
+      { "model": "scenic:block/sandstone_rock_pile_one", "y": 180 },
+      { "model": "scenic:block/sandstone_rock_pile_one", "y": 270 }
+    ],
+    "rocks=2": [
+      { "model": "scenic:block/sandstone_rock_pile_two" },
+      { "model": "scenic:block/sandstone_rock_pile_two", "y": 90 },
+      { "model": "scenic:block/sandstone_rock_pile_two", "y": 180 },
+      { "model": "scenic:block/sandstone_rock_pile_two", "y": 270 }
+    ],
+    "rocks=3": [
+      { "model": "scenic:block/sandstone_rock_pile_three" },
+      { "model": "scenic:block/sandstone_rock_pile_three", "y": 90 },
+      { "model": "scenic:block/sandstone_rock_pile_three", "y": 180 },
+      { "model": "scenic:block/sandstone_rock_pile_three", "y": 270 }
+    ],
+    "rocks=4": [
+      { "model": "scenic:block/sandstone_rock_pile_four" },
+      { "model": "scenic:block/sandstone_rock_pile_four", "y": 90 },
+      { "model": "scenic:block/sandstone_rock_pile_four", "y": 180 },
+      { "model": "scenic:block/sandstone_rock_pile_four", "y": 270 }
+    ],
+    "rocks=5": [
+      { "model": "scenic:block/sandstone_rock_pile_five" },
+      { "model": "scenic:block/sandstone_rock_pile_five", "y": 90 },
+      { "model": "scenic:block/sandstone_rock_pile_five", "y": 180 },
+      { "model": "scenic:block/sandstone_rock_pile_five", "y": 270 }
+    ],
+    "rocks=6": [
+      { "model": "scenic:block/sandstone_rock_pile_six" },
+      { "model": "scenic:block/sandstone_rock_pile_six", "y": 90 },
+      { "model": "scenic:block/sandstone_rock_pile_six", "y": 180 },
+      { "model": "scenic:block/sandstone_rock_pile_six", "y": 270 }
+    ],
+    "rocks=7": [
+      { "model": "scenic:block/sandstone_rock_pile_seven" },
+      { "model": "scenic:block/sandstone_rock_pile_seven", "y": 90 },
+      { "model": "scenic:block/sandstone_rock_pile_seven", "y": 180 },
+      { "model": "scenic:block/sandstone_rock_pile_seven", "y": 270 }
+    ]
+  }
+}

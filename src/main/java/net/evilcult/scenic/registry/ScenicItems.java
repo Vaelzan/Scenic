@@ -15,7 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
  * Scenic-Mod - net.evilcult.scenic.registry.AestheticsItems
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-1.0.2
+ * @version 1.15.2-1.0.3
  * @since 2020-04-25
  */
 @SuppressWarnings({"WeakerAccess", "unused"})
@@ -57,6 +57,9 @@ public class ScenicItems {
 
     public static final RegistryObject<Item> ROCK = ITEMS.register("rock",
             () -> new BlockNamedItem(ScenicBlocks.ROCK_PILE.get(), defaultProperties()));
+
+    public static final RegistryObject<Item> SANDSTONE_ROCK = ITEMS.register("sandstone_rock",
+            () -> new BlockNamedItem(ScenicBlocks.SANDSTONE_ROCK_PILE.get(), defaultProperties()));
 
     public static final RegistryObject<Item> STALAGMITE = ITEMS.register("stalagmite",
             () -> new BlockItem(ScenicBlocks.STALAGMITE.get(), defaultProperties()));
@@ -116,10 +119,18 @@ public class ScenicItems {
     public static final RegistryObject<Item> BLACK_STAINED_GLASS_LANTERN = ITEMS.register("black_stained_glass_lantern",
             () -> new BlockItem(ScenicBlocks.BLACK_STAINED_GLASS_LANTERN.get(), defaultProperties()));
 
+    /**
+     * Creates a new properties object with the default properties for an item.
+     * @return The default item properties.
+     */
     public static Item.Properties defaultProperties() {
         return new Item.Properties().group(ScenicItemGroups.MAIN);
     }
 
+    /**
+     * Register all compostable items.
+     * Note that this is NOT thread-safe - this should be taken under consideration when calling this method.
+     */
     public static void registerCompostables() {
         VanillaUtils.registerCompostable(GRASS_TUFT.get(), 0.3f);
         VanillaUtils.registerCompostable(GRASS_SHORT.get(), 0.2f);

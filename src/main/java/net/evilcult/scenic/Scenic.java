@@ -24,7 +24,7 @@ import org.apache.logging.log4j.Logger;
  * Scenic-Mod - net.evilcult.scenic.Scenic
  *
  * @author Patrick "Vaelzan" Beasley (vaelzan@evilcult.net)
- * @version 1.15.2-1.0.2
+ * @version 1.15.2-1.0.3
  * @since 2020-04-25
  */
 @Mod(Scenic.MODID)
